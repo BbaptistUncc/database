@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="search.css" rel="stylesheet" type="text/css" media="all">
+    <link href="table.css" rel="stylesheet" type="text/css" media="all">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <script src="search.js" type="text/javascript"></script>
+  </head>
+  <body>
+<h1>Select Role</h1>
+   <form action="">
+    <select onchange="la(this.value)">
+        <option value="Select">Select...</option>
+    <option value="patron.php">Patron/Student</option>
+    <option value="Librarian">Librarian</option>
+    </select>
+    </form>
+
+    <script>
+
+        function la(src){
+
+            window.location=src;
+        }
+    </script>
+ <br>
+  </body>
+</html>
